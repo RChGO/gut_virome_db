@@ -1,4 +1,4 @@
-# virome_db： remove redundancy
+# gut_virome_db： remove redundancy
 
 Data:
 
