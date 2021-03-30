@@ -34,8 +34,6 @@ perl blast_cluster.v2.pl GVD_sequences.sort.len GVD.cvg GVD.i95_c50.uniq 50 95
 perl blast_cluster.v2.pl GVD_sequences.sort.len GVD.cvg GVD.i95_c40.uniq 40 95
 
 
-
-
 perl blast_cluster.v3.pl GPD_sequences.sort.len GPD.cvg GPD.i95_c75.set 75 95
 perl blast_cluster.v3.pl GPD_sequences.sort.len GPD.cvg GPD.i95_c70.set 70 95
 perl blast_cluster.v3.pl GPD_sequences.sort.len GPD.cvg GPD.i95_c60.set 60 95
@@ -46,8 +44,3 @@ perl blast_cluster.v3.pl GVD_sequences.sort.len GVD.cvg GVD.i95_c70.set 70 95
 perl blast_cluster.v3.pl GVD_sequences.sort.len GVD.cvg GVD.i95_c60.set 60 95
 perl blast_cluster.v3.pl GVD_sequences.sort.len GVD.cvg GVD.i95_c50.set 50 95
 perl blast_cluster.v3.pl GVD_sequences.sort.len GVD.cvg GVD.i95_c40.set 40 95
-
-
-#seqkit: https://github.com/shenwei356/seqkit
-grep '^0' GPD.i95_c70.uniq  |sed -e 's/.*>//' -e 's/\.* \*$//' |seqkit grep -f - GPD_sequences.fa > GPD_i95_c70.uniq.fa
-grep '^0' GPD.i95_c75.uniq  |sed -e 's/.*>//' -e 's/\.* \*$//' |seqkit grep -f - GPD_sequences.fa > GPD_i95_c75.uniq.fa
