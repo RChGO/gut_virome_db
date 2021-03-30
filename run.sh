@@ -49,5 +49,5 @@ perl blast_cluster.v3.pl GVD_sequences.sort.len GVD.cvg GVD.i95_c40.set 40 95
 
 
 #seqkit: https://github.com/shenwei356/seqkit
-grep '^0' GPD.i95_c70.uniq  |sed -e 's/.*>//' -e 's/\.* \*$//' |seqkit grep -f - GPD_sequences.fa > GPD_i95_c70.fa
-grep '^0' GPD.i95_c75.uniq  |sed -e 's/.*>//' -e 's/\.* \*$//' |seqkit grep -f - GPD_sequences.fa > GPD_i95_c75.fa
+grep '^0' GPD.i95_c70.uniq  |sed -e 's/.*>//' -e 's/\.* \*$//' |seqkit grep -f - GPD_sequences.fa > GPD_i95_c70.uniq.fa
+grep '^0' GPD.i95_c75.uniq  |sed -e 's/.*>//' -e 's/\.* \*$//' |seqkit grep -f - GPD_sequences.fa > GPD_i95_c75.uniq.fa
